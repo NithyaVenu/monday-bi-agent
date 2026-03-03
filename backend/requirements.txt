@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+httpx
+groq
+python-dotenv
+rapidfuzz
+python-dateutil
+pydantic

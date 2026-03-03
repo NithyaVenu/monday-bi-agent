@@ -1,0 +1,24 @@
+# # Python
+# backend/venv/
+# backend/.env
+# __pycache__/
+# *.pyc
+
+# # Node
+# frontend/node_modules/
+# frontend/dist/ 
+
+# ===== Python =====
+backend/venv/
+backend/.env
+__pycache__/
+*.pyc
+
+# ===== Node =====
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# ===== Global env protection =====
+.env
+.env.*
