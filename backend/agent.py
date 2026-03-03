@@ -203,8 +203,8 @@ async def run_agent(user_message: str, history: list[dict]) -> dict:
 
     # First Groq call — decide which tool to call
     tool_decision = client.chat.completions.create(
-        # model="llama-3.3-70b-versatile",
-        model="llama-3.1-8b-instant",
+        model="llama-3.3-70b-versatile",
+        # model="llama-3.1-8b-instant",
         messages=[
             {
                 "role": "system",
@@ -304,8 +304,8 @@ async def run_agent(user_message: str, history: list[dict]) -> dict:
     is_cross_board = "deals" in trimmed_result and "work_orders" in trimmed_result
 
     final_response = client.chat.completions.create(
-        # model="llama-3.3-70b-versatile",
-        model="llama-3.1-8b-instant",
+        model="llama-3.3-70b-versatile",
+        # model="llama-3.1-8b-instant",
         messages=[
             {
                 "role": "system",
